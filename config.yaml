@@ -8,7 +8,7 @@
 # lc: Library Carpentry
 # cp: Carpentries (to use for instructor training for instance)
 # incubator: The Carpentries Incubator
-carpentry: 'epiverse-trace'
+carpentry: 'epitkit'
 
 # Overall title for pages.
 title: 'Outbreak Analytics and Modelling in Public Health'
