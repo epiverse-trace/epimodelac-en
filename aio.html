@@ -637,31 +637,81 @@ project in the folder of your choice on your local machine; this in
 order to organize the workspace where the codes you develop during the
 session will be stored.</p>
 <p>Before installing <strong>serofoi</strong>, it is necessary to
-install and configure C++ Toolchain (instructions for <a href="https://github.com/stan-dev/rstan/wiki/Configuring-C---Toolchain-for-Windows" class="external-link">windows</a>/
-<a href="https://github.com/stan-dev/rstan/wiki/Configuring-C---Toolchain-for-Mac" class="external-link">mac</a>/
-<a href="https://github.com/stan-dev/rstan/wiki/Configuring-C-Toolchain-for-Linux" class="external-link">linux</a>).
-After you have configured C++ Toolchain, run the following lines of code
-to install the package:</p>
+install and configure C++ Toolchain (instructions for <a href="https://cran.r-project.org/bin/windows/Rtools/" class="external-link">windows</a>/ <a href="https://github.com/stan-dev/rstan/wiki/Configuring-C---Toolchain-for-Mac" class="external-link">mac</a>/
+<a href="https://github.com/stan-dev/rstan/wiki/Configuring-C-Toolchain-for-Linux" class="external-link">linux</a>).</p>
+<div id="accordionSpoiler1" class="accordion spoiler-accordion accordion-flush">
+<div class="accordion-item">
+<button class="accordion-button spoiler-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSpoiler1" aria-expanded="false" aria-controls="collapseSpoiler1">
+  <h3 class="accordion-header" id="headingSpoiler1">  <div class="note-square"><i aria-hidden="true" class="callout-icon" data-feather="eye"></i></div> how to install and configure Rtools in Windows? </h3>
+</button>
+<div id="collapseSpoiler1" class="accordion-collapse collapse" data-bs-parent="#accordionSpoiler1" aria-labelledby="headingSpoiler1">
+<div class="accordion-body">
+<p>Windows users will need a working installation of <code>Rtools</code>
+in order to build the package from source. <code>Rtools</code> is not an
+R package, but a software you need to download and install. We suggest
+you to follow:</p>
+<!-- reference [these steps](http://jtleek.com/modules/01_DataScientistToolbox/02_10_rtools/#1) -->
+<ol style="list-style-type: decimal">
+<li>
+<strong>Verify <code>Rtools</code> installation</strong>. You can do
+so by using Windows search across your system. Optionally, you can use
+<a href="https://devtools.r-lib.org/" class="external-link">devtools</a> running:</li>
+</ol>
 <div class="codewrapper sourceCode" id="cb1">
 <h3 class="code-label">R<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
 </h3>
 <pre class="downlit sourceCode r">
+<code class="sourceCode R"><span><span class="kw">if</span><span class="op">(</span><span class="op">!</span><span class="kw">require</span><span class="op">(</span><span class="st">"devtools"</span><span class="op">)</span><span class="op">)</span> <span class="fu">install.packages</span><span class="op">(</span><span class="st">"devtools"</span><span class="op">)</span></span>
+<span><span class="fu">devtools</span><span class="fu">::</span><span class="fu">find_rtools</span><span class="op">(</span><span class="op">)</span></span></code></pre>
+</div>
+<p>If the result is <code>FALSE</code>, then you should do step 2.</p>
+<ol start="2" style="list-style-type: decimal">
+<li><p><strong>Install <code>Rtools</code></strong>. Download the
+<code>Rtools</code> installer from <a href="https://cran.r-project.org/bin/windows/Rtools/" class="external-link uri">https://cran.r-project.org/bin/windows/Rtools/</a>. Install
+with default selections.</p></li>
+<li><p><strong>Verify <code>Rtools</code> installation</strong>. Again,
+we can use <a href="https://devtools.r-lib.org/" class="external-link">devtools</a>:</p></li>
+</ol>
+<div class="codewrapper sourceCode" id="cb2">
+<h3 class="code-label">R<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
+</h3>
+<pre class="downlit sourceCode r">
+<code class="sourceCode R"><span><span class="kw">if</span><span class="op">(</span><span class="op">!</span><span class="kw">require</span><span class="op">(</span><span class="st">"devtools"</span><span class="op">)</span><span class="op">)</span> <span class="fu">install.packages</span><span class="op">(</span><span class="st">"devtools"</span><span class="op">)</span></span>
+<span><span class="fu">devtools</span><span class="fu">::</span><span class="fu">find_rtools</span><span class="op">(</span><span class="op">)</span></span></code></pre>
+</div>
+</div>
+</div>
+</div>
+</div>
+<p>After you have configured C++ Toolchain, run the following lines of
+code to install the package:</p>
+<div class="codewrapper sourceCode" id="cb3">
+<h3 class="code-label">R<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
+</h3>
+<pre class="downlit sourceCode r">
 <code class="sourceCode R"><span><span class="kw">if</span><span class="op">(</span><span class="op">!</span><span class="kw">require</span><span class="op">(</span><span class="st">"pak"</span><span class="op">)</span><span class="op">)</span> <span class="fu">install.packages</span><span class="op">(</span><span class="st">"pak"</span><span class="op">)</span></span>
-<span><span class="fu">pak</span><span class="fu">::</span><span class="fu">pak</span><span class="op">(</span><span class="st">"epiverse-trace/serofoi"</span><span class="op">)</span></span></code></pre>
+<span><span class="fu">pak</span><span class="fu">::</span><span class="fu">pak</span><span class="op">(</span><span class="st">"serofoi"</span><span class="op">)</span></span></code></pre>
+</div>
+<p>If you get an error, your can try:</p>
+<div class="codewrapper sourceCode" id="cb4">
+<h3 class="code-label">R<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
+</h3>
+<pre class="downlit sourceCode r">
+<code class="sourceCode R"><span><span class="fu">install.packages</span><span class="op">(</span><span class="st">"serofoi"</span><span class="op">)</span></span></code></pre>
 </div>
 <p>Optionally, it is possible to modify the R configuration so that the
 models to be implemented run in parallel, taking advantage of the
 processor cores of your computer. This has the effect of reducing the
 computation time of the implementations in Stan. To activate this option
 run:</p>
-<div class="codewrapper sourceCode" id="cb2">
+<div class="codewrapper sourceCode" id="cb5">
 <h3 class="code-label">R<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
 </h3>
 <pre class="downlit sourceCode r">
 <code class="sourceCode R"><span><span class="fu">options</span><span class="op">(</span>mc.cores<span class="op">=</span><span class="fu">parallel</span><span class="fu">::</span><span class="fu">detectCores</span><span class="op">(</span><span class="op">)</span><span class="op">)</span></span></code></pre>
 </div>
 <p>Finally, load the package by running</p>
-<div class="codewrapper sourceCode" id="cb3">
+<div class="codewrapper sourceCode" id="cb6">
 <h3 class="code-label">R<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
 </h3>
 <pre class="downlit sourceCode r">
@@ -679,7 +729,7 @@ different models and determine which of these best describes the
 situation. First, let us load and prepare the data that we will use in
 this analysis. The database <code>chik2015</code> contains the data
 corresponding to this serological survey:</p>
-<div class="codewrapper sourceCode" id="cb4">
+<div class="codewrapper sourceCode" id="cb7">
 <h3 class="code-label">R<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
 </h3>
 <pre class="downlit sourceCode r">
@@ -697,7 +747,7 @@ corresponding to this serological survey:</p>
 </div>
 <p>To run the constant FoI model and visualize the results of the model,
 run the following lines of code:</p>
-<div class="codewrapper sourceCode" id="cb6">
+<div class="codewrapper sourceCode" id="cb9">
 <h3 class="code-label">R<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
 </h3>
 <pre class="downlit sourceCode r">
@@ -712,7 +762,7 @@ run the following lines of code:</p>
 <p>Now, run the time-dependent models with <code>iter =1500</code>. Then
 visualize the three plots together using the <code>plot_grid()</code>
 function of the <code>cowplot</code> package:</p>
-<div class="codewrapper sourceCode" id="cb7">
+<div class="codewrapper sourceCode" id="cb10">
 <h3 class="code-label">R<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
 </h3>
 <pre class="downlit sourceCode r">
@@ -793,7 +843,7 @@ emergency using the serofoi library.</p>
 <button class="accordion-button hint-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseHint1" aria-expanded="false" aria-controls="collapseHint1">
   <h4 class="accordion-header" id="headingHint1"> Give me a hint </h4>
 </button>
-<div id="collapseHint1" class="accordion-collapse collapse" aria-labelledby="headingHint1" data-bs-parent="#accordionHint1">
+<div id="collapseHint1" class="accordion-collapse collapse" data-bs-parent="#accordionHint1" aria-labelledby="headingHint1">
 <div class="accordion-body">
 <p><strong>Data exploration and visualization of seroprevalence (30
 min)</strong>.</p>
@@ -826,7 +876,7 @@ trend in each case.</p>
 <button class="accordion-button hint-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseHint2" aria-expanded="false" aria-controls="collapseHint2">
   <h4 class="accordion-header" id="headingHint2"> Give me a hint </h4>
 </button>
-<div id="collapseHint2" class="accordion-collapse collapse" aria-labelledby="headingHint2" data-bs-parent="#accordionHint2">
+<div id="collapseHint2" class="accordion-collapse collapse" data-bs-parent="#accordionHint2" aria-labelledby="headingHint2">
 <div class="accordion-body">
 <p><strong>Estimation of the historical force of infection (30
 min)</strong>.</p>
@@ -853,11 +903,11 @@ involved in the recent encephalitis epidemic?</p>
 <button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution1" aria-expanded="false" aria-controls="collapseSolution1">
   <h4 class="accordion-header" id="headingSolution1"> Show me the solution </h4>
 </button>
-<div id="collapseSolution1" class="accordion-collapse collapse" aria-labelledby="headingSolution1" data-bs-parent="#accordionSolution1">
+<div id="collapseSolution1" class="accordion-collapse collapse" data-bs-parent="#accordionSolution1" aria-labelledby="headingSolution1">
 <div class="accordion-body">
 <p>To adapt one of the four databases to the format required for
 {serofoi}, you can use the following code:</p>
-<div class="codewrapper sourceCode" id="cb8">
+<div class="codewrapper sourceCode" id="cb11">
 <h3 class="code-label">R<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
 </h3>
 <pre class="downlit sourceCode r">
