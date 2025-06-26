@@ -505,8 +505,8 @@ virus_serosurvey %>%
 
 SAMPLING FOR MODEL 'time_no_seroreversion' NOW (CHAIN 1).
 Chain 1: 
-Chain 1: Gradient evaluation took 0.000107 seconds
-Chain 1: 1000 transitions using 10 leapfrog steps per transition would take 1.07 seconds.
+Chain 1: Gradient evaluation took 0.000119 seconds
+Chain 1: 1000 transitions using 10 leapfrog steps per transition would take 1.19 seconds.
 Chain 1: Adjust your expectations accordingly!
 Chain 1: 
 Chain 1: 
@@ -523,15 +523,15 @@ Chain 1: Iteration: 800 / 1000 [ 80%]  (Sampling)
 Chain 1: Iteration: 900 / 1000 [ 90%]  (Sampling)
 Chain 1: Iteration: 1000 / 1000 [100%]  (Sampling)
 Chain 1: 
-Chain 1:  Elapsed Time: 4.462 seconds (Warm-up)
-Chain 1:                3.875 seconds (Sampling)
-Chain 1:                8.337 seconds (Total)
+Chain 1:  Elapsed Time: 4.36 seconds (Warm-up)
+Chain 1:                3.48 seconds (Sampling)
+Chain 1:                7.84 seconds (Total)
 Chain 1: 
 
 SAMPLING FOR MODEL 'time_no_seroreversion' NOW (CHAIN 2).
 Chain 2: 
-Chain 2: Gradient evaluation took 9.9e-05 seconds
-Chain 2: 1000 transitions using 10 leapfrog steps per transition would take 0.99 seconds.
+Chain 2: Gradient evaluation took 0.000125 seconds
+Chain 2: 1000 transitions using 10 leapfrog steps per transition would take 1.25 seconds.
 Chain 2: Adjust your expectations accordingly!
 Chain 2: 
 Chain 2: 
@@ -548,15 +548,15 @@ Chain 2: Iteration: 800 / 1000 [ 80%]  (Sampling)
 Chain 2: Iteration: 900 / 1000 [ 90%]  (Sampling)
 Chain 2: Iteration: 1000 / 1000 [100%]  (Sampling)
 Chain 2: 
-Chain 2:  Elapsed Time: 3.952 seconds (Warm-up)
-Chain 2:                2.806 seconds (Sampling)
-Chain 2:                6.758 seconds (Total)
+Chain 2:  Elapsed Time: 4.199 seconds (Warm-up)
+Chain 2:                3.662 seconds (Sampling)
+Chain 2:                7.861 seconds (Total)
 Chain 2: 
 
 SAMPLING FOR MODEL 'time_no_seroreversion' NOW (CHAIN 3).
 Chain 3: 
-Chain 3: Gradient evaluation took 0.000136 seconds
-Chain 3: 1000 transitions using 10 leapfrog steps per transition would take 1.36 seconds.
+Chain 3: Gradient evaluation took 0.000103 seconds
+Chain 3: 1000 transitions using 10 leapfrog steps per transition would take 1.03 seconds.
 Chain 3: Adjust your expectations accordingly!
 Chain 3: 
 Chain 3: 
@@ -573,15 +573,15 @@ Chain 3: Iteration: 800 / 1000 [ 80%]  (Sampling)
 Chain 3: Iteration: 900 / 1000 [ 90%]  (Sampling)
 Chain 3: Iteration: 1000 / 1000 [100%]  (Sampling)
 Chain 3: 
-Chain 3:  Elapsed Time: 4.033 seconds (Warm-up)
-Chain 3:                3.253 seconds (Sampling)
-Chain 3:                7.286 seconds (Total)
+Chain 3:  Elapsed Time: 4.23 seconds (Warm-up)
+Chain 3:                2.681 seconds (Sampling)
+Chain 3:                6.911 seconds (Total)
 Chain 3: 
 
 SAMPLING FOR MODEL 'time_no_seroreversion' NOW (CHAIN 4).
 Chain 4: 
-Chain 4: Gradient evaluation took 9.9e-05 seconds
-Chain 4: 1000 transitions using 10 leapfrog steps per transition would take 0.99 seconds.
+Chain 4: Gradient evaluation took 0.000102 seconds
+Chain 4: 1000 transitions using 10 leapfrog steps per transition would take 1.02 seconds.
 Chain 4: Adjust your expectations accordingly!
 Chain 4: 
 Chain 4: 
@@ -598,9 +598,9 @@ Chain 4: Iteration: 800 / 1000 [ 80%]  (Sampling)
 Chain 4: Iteration: 900 / 1000 [ 90%]  (Sampling)
 Chain 4: Iteration: 1000 / 1000 [100%]  (Sampling)
 Chain 4: 
-Chain 4:  Elapsed Time: 3.986 seconds (Warm-up)
-Chain 4:                2.86 seconds (Sampling)
-Chain 4:                6.846 seconds (Total)
+Chain 4:  Elapsed Time: 4.189 seconds (Warm-up)
+Chain 4:                2.84 seconds (Sampling)
+Chain 4:                7.029 seconds (Total)
 Chain 4: 
 ```
 
@@ -614,6 +614,12 @@ Warning: Examine the pairs() plot to diagnose sampling problems
 ```
 
 ``` warning
+Warning: The largest R-hat is 1.08, indicating chains have not mixed.
+Running the chains for more iterations may help. See
+https://mc-stan.org/misc/warnings.html#r-hat
+```
+
+``` warning
 Warning: Bulk Effective Samples Size (ESS) is too low, indicating posterior means and medians may be unreliable.
 Running the chains for more iterations may help. See
 https://mc-stan.org/misc/warnings.html#bulk-ess
@@ -623,6 +629,10 @@ https://mc-stan.org/misc/warnings.html#bulk-ess
 Warning: Tail Effective Samples Size (ESS) is too low, indicating posterior variances and tail quantiles may be unreliable.
 Running the chains for more iterations may help. See
 https://mc-stan.org/misc/warnings.html#tail-ess
+```
+
+``` warning
+Warning: Some Pareto k diagnostic values are too high. See help('pareto-k-diagnostic') for details.
 ```
 
 <img src="fig/Serofoi-tutorial-rendered-unnamed-chunk-10-1.png" style="display: block; margin: auto;" />
