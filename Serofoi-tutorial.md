@@ -541,8 +541,8 @@ virus_serosurvey %>%
 
 SAMPLING FOR MODEL 'time_no_seroreversion' NOW (CHAIN 1).
 Chain 1: 
-Chain 1: Gradient evaluation took 0.000113 seconds
-Chain 1: 1000 transitions using 10 leapfrog steps per transition would take 1.13 seconds.
+Chain 1: Gradient evaluation took 0.000136 seconds
+Chain 1: 1000 transitions using 10 leapfrog steps per transition would take 1.36 seconds.
 Chain 1: Adjust your expectations accordingly!
 Chain 1: 
 Chain 1: 
@@ -559,15 +559,15 @@ Chain 1: Iteration: 800 / 1000 [ 80%]  (Sampling)
 Chain 1: Iteration: 900 / 1000 [ 90%]  (Sampling)
 Chain 1: Iteration: 1000 / 1000 [100%]  (Sampling)
 Chain 1: 
-Chain 1:  Elapsed Time: 3.783 seconds (Warm-up)
-Chain 1:                2.831 seconds (Sampling)
-Chain 1:                6.614 seconds (Total)
+Chain 1:  Elapsed Time: 3.953 seconds (Warm-up)
+Chain 1:                3.083 seconds (Sampling)
+Chain 1:                7.036 seconds (Total)
 Chain 1: 
 
 SAMPLING FOR MODEL 'time_no_seroreversion' NOW (CHAIN 2).
 Chain 2: 
-Chain 2: Gradient evaluation took 9.8e-05 seconds
-Chain 2: 1000 transitions using 10 leapfrog steps per transition would take 0.98 seconds.
+Chain 2: Gradient evaluation took 0.000131 seconds
+Chain 2: 1000 transitions using 10 leapfrog steps per transition would take 1.31 seconds.
 Chain 2: Adjust your expectations accordingly!
 Chain 2: 
 Chain 2: 
@@ -584,15 +584,15 @@ Chain 2: Iteration: 800 / 1000 [ 80%]  (Sampling)
 Chain 2: Iteration: 900 / 1000 [ 90%]  (Sampling)
 Chain 2: Iteration: 1000 / 1000 [100%]  (Sampling)
 Chain 2: 
-Chain 2:  Elapsed Time: 4.237 seconds (Warm-up)
-Chain 2:                2.81 seconds (Sampling)
-Chain 2:                7.047 seconds (Total)
+Chain 2:  Elapsed Time: 4.551 seconds (Warm-up)
+Chain 2:                3.691 seconds (Sampling)
+Chain 2:                8.242 seconds (Total)
 Chain 2: 
 
 SAMPLING FOR MODEL 'time_no_seroreversion' NOW (CHAIN 3).
 Chain 3: 
-Chain 3: Gradient evaluation took 0.000129 seconds
-Chain 3: 1000 transitions using 10 leapfrog steps per transition would take 1.29 seconds.
+Chain 3: Gradient evaluation took 0.000101 seconds
+Chain 3: 1000 transitions using 10 leapfrog steps per transition would take 1.01 seconds.
 Chain 3: Adjust your expectations accordingly!
 Chain 3: 
 Chain 3: 
@@ -609,15 +609,15 @@ Chain 3: Iteration: 800 / 1000 [ 80%]  (Sampling)
 Chain 3: Iteration: 900 / 1000 [ 90%]  (Sampling)
 Chain 3: Iteration: 1000 / 1000 [100%]  (Sampling)
 Chain 3: 
-Chain 3:  Elapsed Time: 3.848 seconds (Warm-up)
-Chain 3:                3.378 seconds (Sampling)
-Chain 3:                7.226 seconds (Total)
+Chain 3:  Elapsed Time: 4.121 seconds (Warm-up)
+Chain 3:                4.047 seconds (Sampling)
+Chain 3:                8.168 seconds (Total)
 Chain 3: 
 
 SAMPLING FOR MODEL 'time_no_seroreversion' NOW (CHAIN 4).
 Chain 4: 
-Chain 4: Gradient evaluation took 9.9e-05 seconds
-Chain 4: 1000 transitions using 10 leapfrog steps per transition would take 0.99 seconds.
+Chain 4: Gradient evaluation took 0.000122 seconds
+Chain 4: 1000 transitions using 10 leapfrog steps per transition would take 1.22 seconds.
 Chain 4: Adjust your expectations accordingly!
 Chain 4: 
 Chain 4: 
@@ -634,9 +634,9 @@ Chain 4: Iteration: 800 / 1000 [ 80%]  (Sampling)
 Chain 4: Iteration: 900 / 1000 [ 90%]  (Sampling)
 Chain 4: Iteration: 1000 / 1000 [100%]  (Sampling)
 Chain 4: 
-Chain 4:  Elapsed Time: 4.107 seconds (Warm-up)
-Chain 4:                3.304 seconds (Sampling)
-Chain 4:                7.411 seconds (Total)
+Chain 4:  Elapsed Time: 3.664 seconds (Warm-up)
+Chain 4:                3.338 seconds (Sampling)
+Chain 4:                7.002 seconds (Total)
 Chain 4: 
 ```
 
